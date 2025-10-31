@@ -6,25 +6,30 @@ OFILES = $(FILES:.c=.o)
 NAME = libft.a
 HEADER = libft.h
 
-TEST = test
-
 all: $(NAME)
 
 $(NAME): $(OFILES)
-	ar rcs $(NAME) $(OFILES)
+	@ar rcs $(NAME) $?
+	@ranlib $(NAME)
+	@echo "Libc function, Additional functions are ready"
 
 %.o: %.c $(HEADER)
-	$(GCC) $(FLAGS) -c $< -o $@
+	@$(GCC) $(FLAGS) -c $< -o $@
+	@echo "$@ is ready"
 
-test: $(NAME) tests/main.c
-	$(GCC) $(FLAGS) tests/main.c -L. -lft -o $(TEST)
-	./$(TEST)
+bonus: 
+
+test: 
+	@$(GCC) $(FLAGS) $(NAME) 
+	@./a.out
 
 clean:
-	rm -f $(OFILES) $(TEST)
+	@rm -f $(OFILES)
+	@echo ".o files were deleted"
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME) a.out
+	@echo "All files were deleted"
 
 re: fclean all
 
