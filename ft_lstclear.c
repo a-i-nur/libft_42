@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
+/*   By: dev <dev@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 17:07:03 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/10/29 17:31:43 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/10/31 20:35:10 by dev              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	*lst = NULL;
 }
 
-void	del_content(void *content)
+/* void	del_content(void *content)
 {
 	free(content);
-}
+} */
 
 /*int	main(void)
 {
