@@ -6,27 +6,22 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 19:27:49 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/10/28 14:25:46 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/06 13:28:30 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /**
- * @brief   Allocates and returns a copy of 's1' with the characters
- *           specified in 'set' removed from the beginning and the end.
+ * @brief Trim characters from both ends of a string.
  *
- * @param   s1   The string to be trimmed.
- * @param   set  The set of characters to remove 
- * 					from the start and end of 's1'.
+ * Removes in-place conceptually (by returning a copy) 
+ * all leading and trailing
+ * characters from @p s1 that are present in @p set, returning a newly
+ * allocated trimmed string. Middle characters are unchanged.
  *
- * @return  A newly allocated trimmed string.
- *          NULL if memory allocation fails or if 's1' is NULL.
- *
- * @note    The returned string must be freed by the caller.
- * @note    If all characters are removed, an empty string ("") is returned.
- *
- * @example
- *          ft_strtrim("  !!Hello!!  ", " !"); // returns "Hello"
+ * @param s1  Source string (NUL-terminated).
+ * @param set Set of characters to trim (as a string).
+ * @return char* Newly allocated trimmed result, or NULL.
  */
 char	*ft_strtrim(char const *s1, char const *set)
 {

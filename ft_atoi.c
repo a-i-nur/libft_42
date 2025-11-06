@@ -6,13 +6,13 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 14:53:15 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/10/23 16:18:33 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/06 13:31:08 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_checkspace(const char *str)
+static int	ft_checkspace(const char *str)
 {
 	int	count;
 
@@ -23,6 +23,17 @@ int	ft_checkspace(const char *str)
 	return (count);
 }
 
+/**
+ * @brief Convert initial part of a string to int (ASCII, no locale).
+ *
+ * Skips leading whitespace, then an optional '+' or '-' sign, then
+ * consumes consecutive decimal digits to produce an int result.
+ * Stops at the first non-digit. Overflow behavior matches standard atoi
+ * (implementation-defined / undefined).
+ *
+ * @param str NUL-terminated input string.
+ * @return int Parsed integer value.
+ */
 int	ft_atoi(const char *str)
 {
 	int	i;

@@ -6,12 +6,23 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 14:41:51 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/10/29 15:16:54 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/06 13:35:40 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Write an integer in decimal form to a file descriptor.
+ *
+ * Converts @p n to its decimal string representation (with a leading '-' if
+ * negative) and writes it to file descriptor @p fd. No trailing newline is
+ * added. Behavior matches standard printf("%d") formatting semantics except
+ * no padding/width is applied.
+ *
+ * @param n Integer to write.
+ * @param fd File descriptor to write to.
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	*num;

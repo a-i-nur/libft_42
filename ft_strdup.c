@@ -6,21 +6,21 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 13:58:12 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/10/27 15:53:04 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/06 13:24:31 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief   Duplicates a given string by allocating memory
- * and copying its contents.
+ * @brief Duplicate a C string.
  *
- * @param   str  The string to duplicate.
- * @return  A newly allocated copy of the string, 
- * or NULL if memory allocation fails.
+ * Allocates enough memory to copy @p str including the terminating NUL,
+ * then returns a pointer to the new string. 
+ * Returns NULL on allocation failure.
  *
- * @note    The returned string must be freed by the caller.
+ * @param str Source NUL-terminated string.
+ * @return char* Newly allocated duplicate, or NULL.
  */
 char	*ft_strdup(const char *str)
 {

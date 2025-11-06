@@ -6,23 +6,29 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 16:06:46 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/10/29 16:29:38 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/06 13:40:56 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Return the last node of a list.
+ *
+ * Traverses the list starting at @p lst until the final node whose
+ * @c next pointer is NULL. If @p lst is NULL, returns NULL.
+ *
+ * @param lst Pointer to the first node of the list.
+ * @return t_list* Pointer to the last node, or NULL if the list is empty.
+ */
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*last_node;
-
-	last_node = lst;
 	if (lst)
 	{
-		while (last_node->next)
-			last_node = last_node-> next;
+		while (lst->next)
+			lst = lst-> next;
 	}
-	return (last_node);
+	return (lst);
 }
 
 /*int main(void)

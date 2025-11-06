@@ -6,7 +6,7 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 18:07:32 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/10/28 18:55:37 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/06 13:29:33 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,15 @@ static void	ft_trans(int n, char *num, int len_num, int sign)
 		num[0] = '-';
 }
 
+/**
+ * @brief Convert an int to a newly allocated string.
+ *
+ * Produces the decimal textual representation of @p n (base 10) including
+ * a leading '-' for negative values. Returns NULL on allocation failure.
+ *
+ * @param n Integer to convert.
+ * @return char* Newly allocated string representation, or NULL.
+ */
 char	*ft_itoa(int n)
 {
 	char	*num;

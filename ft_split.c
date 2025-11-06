@@ -6,7 +6,7 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 14:33:25 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/10/28 16:55:08 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/06 13:29:01 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,17 @@ static int	ft_create_lines(char **arr_str, size_t len_arr,
 	return (1);
 }
 
+/**
+ * @brief Split a string by a delimiter into an array of strings.
+ *
+ * Splits @p s on delimiter character @p c into a NULL-terminated array
+ * of newly allocated tokens. Consecutive delimiters produce no empty tokens
+ * (i.e., they are skipped). Returns NULL on allocation failure.
+ *
+ * @param s Input string (NUL-terminated).
+ * @param c Delimiter character.
+ * @return char** NULL-terminated array of newly allocated strings, or NULL.
+ */
 char	**ft_split(char const *s, char c)
 {
 	char	**arr_str;
