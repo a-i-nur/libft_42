@@ -6,7 +6,7 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 16:31:12 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/11/07 16:42:02 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/07 17:42:12 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	t_list	*last_node;
 
 	if (!lst || !new)
-		return; 
+		return ;
 	if (*lst)
 	{
 		last_node = ft_lstlast(*lst);

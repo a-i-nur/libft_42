@@ -6,7 +6,7 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 14:28:38 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/11/06 17:45:16 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/07 17:41:58 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@ char	*ft_strnstr(const char *big_str, const char *lit_str, size_t num)
 	size_t	i;
 	size_t	len_lit;
 
-	if (!lit_str)
-		return (NULL);
 	if (*lit_str == '\0')
 		return ((char *)big_str);
 	i = 0;

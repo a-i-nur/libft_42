@@ -6,7 +6,7 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 14:33:25 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/11/06 13:29:01 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/07 17:25:22 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ static int	ft_create_lines(char **arr_str, size_t len_arr,
 		if (size_line != 0)
 		{
 			arr_str[num_line] = (char *)malloc((size_line +1) * sizeof(char));
-			if (!arr_str)
+			if (!arr_str[num_line])
 				return (ft_liberator(arr_str, num_line));
 			ft_copy_line(s + i - size_line, arr_str[num_line], size_line);
 			num_line++;
