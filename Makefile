@@ -45,14 +45,14 @@ clean:
 	@echo ".o files were deleted"
 
 fclean: clean
-	@rm -f $(NAME) 
+	@rm -f $(NAME) a.out
 	@echo "All files were deleted"
 
 re: fclean all
 
-#test: 
-#	@$(CC) $(FLAGS) $(NAME) 
-#	@./a.out
+test: 
+	@$(CC) $(FLAGS) $(NAME) 
+	@./a.out
 
 #norm:
 #	@norminette
