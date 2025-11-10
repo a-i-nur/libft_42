@@ -6,7 +6,7 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 16:30:59 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/11/07 14:29:41 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/10 13:21:04 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,7 @@ void	*ft_calloc(size_t count_obj, size_t size_per_obj)
 
 	if (count_obj == 0 || size_per_obj == 0)
 		return (malloc(0));
-	if (count_obj != 0 && (count_obj * size_per_obj)
-		/ count_obj != size_per_obj)
+	if (count_obj > SIZE_MAX / size_per_obj)
 		return (NULL);
 	total_size = count_obj * size_per_obj;
 	result = malloc(total_size);
@@ -40,6 +39,3 @@ void	*ft_calloc(size_t count_obj, size_t size_per_obj)
 	ft_bzero(result, total_size);
 	return (result);
 }
-
-//if (count_obj > SIZE_MAX / size_per_obj)
-	//	return (NULL);

@@ -6,7 +6,7 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 19:27:49 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/11/06 13:28:30 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/10 13:01:18 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1 || !set)
 		return (NULL);
 	left_trim = 0;
-	while (ft_strchr(set, s1[left_trim]))
+	while (s1[left_trim] && ft_strchr(set, s1[left_trim]))
 		left_trim++;
 	right_trim = ft_strlen(s1);
 	if (left_trim < right_trim)
-		while (ft_strchr(set, s1[right_trim - 1]))
+		while (right_trim > left_trim && ft_strchr(set, s1[right_trim - 1]))
 			right_trim--;
 	else
 		return (ft_strdup(""));

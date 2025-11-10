@@ -6,7 +6,7 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 17:18:05 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/11/05 15:06:02 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/10 12:43:46 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 int	ft_isprint(int symbol)
 {
 	if (symbol >= 32 && symbol <= 126)
-		return (2);
+		return (1);
 	return (0);
 }
 

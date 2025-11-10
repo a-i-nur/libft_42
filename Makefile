@@ -22,11 +22,11 @@ HEADER = libft.h
 all: $(NAME)
 
 $(NAME): $(O_FILES)
-	@ar rcs $(NAME) $?
-	@echo "Libc functions, Additional functions are ready"
+	@ar rcs $(NAME) $^
+	@echo "Libc functions, additional functions are ready"
 
-bonus: $(O_BONUS)
-	@ar rcs $(NAME) $?
+bonus:  $(O_FILES) $(O_BONUS)
+	@ar rcs $(NAME) $^
 	@echo "Bonus functions are ready"
 
 %.o: %.c $(HEADER)

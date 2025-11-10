@@ -6,7 +6,7 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 13:34:38 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/11/10 12:26:23 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/10 13:18:47 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-//# include <stdio.h>
-//# include <string.h>
-//# include <limits.h>
-//# include <ctype.h>
-//# include <bsd/string.h> 
-//# include <stddef.h> 
-//# include <stdint.h>
+# include <stddef.h>
+# include <limits.h>
+# include <stdint.h>
+/*# include <stdio.h>
+# include <string.h>
+# include <ctype.h>
+# include <bsd/string.h> */
 
 typedef struct s_list
 {
