@@ -6,7 +6,7 @@
 /*   By: aakhmeto <aakhmeto@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 13:34:38 by aakhmeto          #+#    #+#             */
-/*   Updated: 2025/11/07 14:41:13 by aakhmeto         ###   ########.fr       */
+/*   Updated: 2025/11/10 12:26:23 by aakhmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h>
+//# include <stdio.h>
 //# include <string.h>
 //# include <limits.h>
 //# include <ctype.h>
